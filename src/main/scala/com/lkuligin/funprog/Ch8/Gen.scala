@@ -2,7 +2,6 @@ package com.lkuligin.funprog.Ch8
 
 import com.lkuligin.funprog.Ch6
 import com.lkuligin.funprog.Ch6.{RNG, State, nonNegativeInt}
-import com.lkuligin.funprog.Ch8.SGen
 
 case class Gen[A] (sample: State[RNG, A]) {
   /**

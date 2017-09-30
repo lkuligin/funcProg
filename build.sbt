@@ -12,7 +12,10 @@ val testDependencies = Seq(
   "org.scalacheck" %% "scalacheck" % "1.13.4" % Test
 )
 
-libraryDependencies += "com.typesafe.akka" % "akka-actor_2.11" % "2.3.4"
+libraryDependencies ++= Seq(
+  "com.typesafe.akka" % "akka-actor_2.11" % "2.3.4",
+  "org.typelevel" %% "cats-core" % "1.0.0-MF"
+)
 
 libraryDependencies ++= Seq(
 ) ++ testDependencies
